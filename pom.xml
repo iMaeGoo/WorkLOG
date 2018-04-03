@@ -8,6 +8,13 @@
     <artifactId>work-log</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <repositories>
+        <repository>
+            <id>Central Repository</id>
+            <url>http://central.maven.org/maven2/</url>
+        </repository>
+    </repositories>
+
     <dependencies>
 
         <!-- junit -->
@@ -73,6 +80,13 @@
             <scope>compile</scope>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-orm -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-orm</artifactId>
+            <version>4.3.14.RELEASE</version>
+        </dependency>
+
         <!-- aspectj -->
         <dependency>
             <groupId>org.aspectj</groupId>
@@ -129,6 +143,14 @@
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <version>5.1.46</version>
+        </dependency>
+
+        <!-- hibernate -->
+        <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>4.3.11.Final</version>
         </dependency>
 
     </dependencies>

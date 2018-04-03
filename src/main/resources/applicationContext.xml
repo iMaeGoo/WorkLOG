@@ -8,10 +8,26 @@
                            http://www.springframework.org/schema/context/spring-context.xsd">
 
     <context:property-placeholder location="classpath:jdbc.properties" />
-    <!--<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
-        <property name="driverClass" value="${jdbc.driver}"></property>
-        <property name="jdbcUrl" value="${jdbc.url}"></property>
-        <property name="user" value="${jdbc.user}"></property>
-        <property name="password" value="${jdbc.password}"></property>
-    </bean>-->
+
+    <!-- spring配置hibernate4 -->
+    <bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+
+        <!-- 配置hibernate属性,把数据库连接的相关信息放到此处配置，通过properties文件加载 -->
+        <property name="hibernateProperties">
+            <props>
+                <prop key="hibernate.dialect">${jdbc.dialect}</prop>
+                <prop key="hibernate.connection.driver_class">${jdbc.driver}</prop>
+                <prop key="hibernate.connection.url">${jdbc.url}</prop>
+                <prop key="hibernate.connection.username">${jdbc.user}</prop>
+                <prop key="hibernate.connection.password">${jdbc.password}</prop>
+            </props>
+        </property>
+
+        <!-- 默认配置文件 -->
+        <property name="configLocation" value="classpath:hibernate.cfg.xml" />
+
+        <!-- 配置hibernate映射文件的路径，放到这里配置mapping映射文件，可以使用通配符 -->
+        <property name="mappingLocations" value="classpath:com/maemn/worklog/model/*.hbm.xml" />
+    </bean>
+
 </beans>
