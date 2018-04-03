@@ -24,64 +24,51 @@
             <groupId>org.glassfish.jersey.containers</groupId>
             <!-- if your container implements Servlet API older than 3.0, use "jersey-container-servlet-core"  -->
             <artifactId>jersey-container-servlet</artifactId>
-            <version>2.26</version>
+            <version>2.25.1</version>
         </dependency>
+
         <!-- Required only when you are using JAX-RS Client -->
         <dependency>
             <groupId>org.glassfish.jersey.core</groupId>
             <artifactId>jersey-client</artifactId>
-            <version>2.26</version>
+            <version>2.25.1</version>
         </dependency>
 
         <dependency>
             <groupId>org.glassfish.jersey.media</groupId>
             <artifactId>jersey-media-json-jackson</artifactId>
-            <version>2.26</version>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/org.glassfish.jersey.inject/jersey-hk2 -->
-        <dependency>
-            <groupId>org.glassfish.jersey.inject</groupId>
-            <artifactId>jersey-hk2</artifactId>
-            <version>2.26</version>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/org.glassfish.hk2/hk2-core -->
-        <dependency>
-            <groupId>org.glassfish.hk2</groupId>
-            <artifactId>hk2-core</artifactId>
-            <version>2.4.0</version>
+            <version>2.25.1</version>
         </dependency>
 
         <!-- springframework -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-test</artifactId>
-            <version>5.0.4.RELEASE</version>
+            <version>4.3.14.RELEASE</version>
         </dependency>
 
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
-            <version>5.0.4.RELEASE</version>
+            <version>4.3.14.RELEASE</version>
         </dependency>
 
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-core</artifactId>
-            <version>5.0.4.RELEASE</version>
+            <version>4.3.14.RELEASE</version>
         </dependency>
 
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-aop</artifactId>
-            <version>5.0.4.RELEASE</version>
+            <version>4.3.14.RELEASE</version>
         </dependency>
 
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context-support</artifactId>
-            <version>5.0.4.RELEASE</version>
+            <version>4.3.14.RELEASE</version>
             <type>jar</type>
             <scope>compile</scope>
         </dependency>
