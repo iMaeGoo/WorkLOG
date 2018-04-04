@@ -13,16 +13,8 @@ import javax.ws.rs.core.MediaType;
 @Controller
 @Path("/login")
 public class LoginController {
-    private UserService userService;
-
-    public LoginController() {
-        // Need a non-parametric construction method.
-    }
-
     @Autowired
-    public LoginController(UserService userService) {
-        this.userService = userService;
-    }
+    private UserService userService;
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)

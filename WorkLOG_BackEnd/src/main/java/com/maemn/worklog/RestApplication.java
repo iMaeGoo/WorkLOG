@@ -12,7 +12,7 @@ import org.glassfish.jersey.server.spring.scope.RequestContextFilter;
 public class RestApplication extends ResourceConfig {
 
     public RestApplication() {
-        packages("com.maemn.worklog.controller");
+        packages("com.maemn.worklog");
 
         // register filters
         register(RequestContextFilter.class);
