@@ -1,0 +1,11 @@
+## IntelliJ
+.idea/
+out/
+
+## File-based project format:
+*.iws
+*.iml
+*.ipr
+
+## Java class files
+*.class

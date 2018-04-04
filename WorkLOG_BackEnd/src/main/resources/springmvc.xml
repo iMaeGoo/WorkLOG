@@ -15,7 +15,7 @@
                            http://www.springframework.org/schema/task/spring-task-4.2.xsd">
 
     <!-- 使用注解开发，不用配置controller，需要配置一个组件扫描器 -->
-    <context:component-scan base-package="com.maemn.worklog.controller"/>
+    <context:component-scan base-package="com.maemn.worklog"/>
 
     <!-- 视图解析器 -->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
