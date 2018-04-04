@@ -3,15 +3,15 @@ package com.maemn.worklog.model;
 import java.util.Date;
 
 public class BasePO {
-    private Long id;
+    private String id;
     private Long createdDateEpoch;
     private Long modifiedDateEpoch;
 
-    public Long getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(String id) {
         this.id = id;
     }
 

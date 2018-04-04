@@ -6,8 +6,8 @@
 
     <class name="com.maemn.worklog.model.RolePO" table="role">
 
-        <id name="id" type="long">
-            <column name="ID" length="32" />
+        <id name="id" type="java.lang.String">
+            <column name="ID" />
             <generator class="identity" />
         </id>
 
@@ -15,11 +15,11 @@
             <column name="COMMENT" />
         </property>
 
-        <property name="createdDateEpoch" type="long">
+        <property name="createdDateEpoch" type="java.lang.Long">
             <column name="CREATED_DATE_EPOCH" />
         </property>
 
-        <property name="modifiedDateEpoch" type="long">
+        <property name="modifiedDateEpoch" type="java.lang.Long">
             <column name="MODIFIED_DATE_EPOCH" />
         </property>
 
