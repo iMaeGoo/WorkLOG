@@ -22,10 +22,17 @@
     </build>
 
     <repositories>
+
         <repository>
             <id>Central Repository</id>
             <url>http://central.maven.org/maven2/</url>
         </repository>
+
+        <repository>
+            <id>Spring Milestones</id>
+            <url>http://repo.spring.io/milestone/</url>
+        </repository>
+
     </repositories>
 
     <dependencies>
@@ -40,55 +47,63 @@
         </dependency>
 
         <!-- jersey -->
+        <!-- https://mvnrepository.com/artifact/com.sun.jersey/jersey-servlet -->
         <dependency>
-            <groupId>org.glassfish.jersey.containers</groupId>
-            <!-- if your container implements Servlet API older than 3.0, use "jersey-container-servlet-core"  -->
-            <artifactId>jersey-container-servlet</artifactId>
-            <version>2.25.1</version>
+            <groupId>com.sun.jersey</groupId>
+            <artifactId>jersey-servlet</artifactId>
+            <version>1.19.4</version>
         </dependency>
 
-        <!-- Required only when you are using JAX-RS Client -->
+        <!-- https://mvnrepository.com/artifact/com.sun.jersey/jersey-client -->
         <dependency>
-            <groupId>org.glassfish.jersey.core</groupId>
+            <groupId>com.sun.jersey</groupId>
             <artifactId>jersey-client</artifactId>
-            <version>2.25.1</version>
+            <version>1.19.4</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/com.sun.jersey/jersey-json -->
         <dependency>
-            <groupId>org.glassfish.jersey.media</groupId>
-            <artifactId>jersey-media-json-jackson</artifactId>
-            <version>2.25.1</version>
+            <groupId>com.sun.jersey</groupId>
+            <artifactId>jersey-json</artifactId>
+            <version>1.19.4</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.sun.jersey.contribs/jersey-spring -->
+        <dependency>
+            <groupId>com.sun.jersey.contribs</groupId>
+            <artifactId>jersey-spring</artifactId>
+            <version>1.19.4</version>
         </dependency>
 
         <!-- springframework -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-test</artifactId>
-            <version>4.3.14.RELEASE</version>
+            <version>3.0.0.RC3</version>
         </dependency>
 
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
-            <version>4.3.14.RELEASE</version>
+            <version>3.0.0.RC3</version>
         </dependency>
 
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-core</artifactId>
-            <version>4.3.14.RELEASE</version>
+            <version>3.0.0.RC3</version>
         </dependency>
 
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-aop</artifactId>
-            <version>4.3.14.RELEASE</version>
+            <version>3.0.0.RC3</version>
         </dependency>
 
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context-support</artifactId>
-            <version>4.3.14.RELEASE</version>
+            <version>3.0.0.RC3</version>
             <type>jar</type>
             <scope>compile</scope>
         </dependency>
@@ -97,7 +112,7 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-orm</artifactId>
-            <version>4.3.14.RELEASE</version>
+            <version>3.0.0.RC3</version>
         </dependency>
 
         <!-- aspectj -->
@@ -163,7 +178,7 @@
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-core</artifactId>
-            <version>4.3.11.Final</version>
+            <version>3.6.10.Final</version>
         </dependency>
 
     </dependencies>
