@@ -4,8 +4,10 @@ import com.maemn.worklog.model.UserPO;
 import org.hibernate.HibernateException;
 import org.hibernate.Query;
 import org.hibernate.Session;
-import org.springframework.orm.hibernate4.HibernateCallback;
+import org.springframework.orm.hibernate3.HibernateCallback;
+import org.springframework.stereotype.Repository;
 
+@Repository
 public class UserDAO extends BaseDAO {
 
     public UserPO getUser(final String userId) {
