@@ -11,7 +11,7 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
 @Controller
-@Path("/rest/login")
+@Path("/login")
 public class LoginController {
     private UserService userService;
 

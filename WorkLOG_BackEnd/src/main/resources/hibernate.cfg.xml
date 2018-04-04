@@ -34,7 +34,7 @@
         <property name="hibernate.c3p0.validate">false</property>
 
         <!-- mappings -->
-        <mapping resource="com/maemn/worklog/model/UserPO.hbm.xml"/>
+        <mapping resource="com/maemn/worklog/model/UserPO.hbm.xml" />
 
     </session-factory>
 </hibernate-configuration>
