@@ -7,7 +7,7 @@
     <class name="com.maemn.worklog.model.UserPO" table="user">
 
         <id name="id" type="long">
-            <column name="ID" length="32" />
+            <column name="ID" />
             <generator class="identity" />
         </id>
 

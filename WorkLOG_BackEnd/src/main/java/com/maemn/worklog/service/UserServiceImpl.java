@@ -11,7 +11,7 @@ public class UserServiceImpl implements UserService {
     private UserDAO userDAO;
 
     @Override
-    public UserPO getUser(final String userId) {
+    public UserPO getUser(String userId) {
         return userDAO.getUser(userId);
     }
 }

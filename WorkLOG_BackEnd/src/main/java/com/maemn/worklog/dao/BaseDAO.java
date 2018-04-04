@@ -1,14 +1,15 @@
 package com.maemn.worklog.dao;
 
 import org.hibernate.SessionFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
+
+import javax.annotation.Resource;
 
 public class BaseDAO extends HibernateDaoSupport {
 
-    @Autowired
-    public BaseDAO(SessionFactory sessionFactory) {
-        this.setSessionFactory(sessionFactory);
+    @Resource
+    public void setSessionFactoryOverride(SessionFactory sessionFactory) {
+        super.setSessionFactory(sessionFactory);
     }
 
     public BaseDAO() {
