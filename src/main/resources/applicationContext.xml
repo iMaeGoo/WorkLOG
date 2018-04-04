@@ -30,4 +30,8 @@
         <property name="mappingLocations" value="classpath:com/maemn/worklog/model/*.hbm.xml" />
     </bean>
 
+    <bean name="userDao" class="com.maemn.worklog.dao.UserDAO">
+        <property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+
 </beans>

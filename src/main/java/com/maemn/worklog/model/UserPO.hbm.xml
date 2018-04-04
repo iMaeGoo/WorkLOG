@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+    <class name="com.maemn.worklog.model.UserPO" table="user">
+
+        <id name="id" type="long">
+            <column name="ID" length="32" />
+            <generator class="identity" />
+        </id>
+
+        <property name="email" type="java.lang.String">
+            <column name="EMAIL" />
+        </property>
+
+        <property name="password" type="java.lang.String">
+            <column name="PASSWORD" />
+        </property>
+
+        <property name="firstName" type="java.lang.String">
+            <column name="FIRST_NAME" />
+        </property>
+
+        <property name="lastName" type="java.lang.String">
+            <column name="LAST_NAME" />
+        </property>
+
+        <property name="isDeleted" type="java.lang.Boolean">
+            <column name="IS_DELETED" />
+        </property>
+
+        <property name="createdDateEpoch" type="long">
+            <column name="CREATED_DATE_EPOCH" />
+        </property>
+
+        <property name="modifiedDateEpoch" type="long">
+            <column name="MODIFIED_DATE_EPOCH" />
+        </property>
+
+    </class>
+
+</hibernate-mapping>
