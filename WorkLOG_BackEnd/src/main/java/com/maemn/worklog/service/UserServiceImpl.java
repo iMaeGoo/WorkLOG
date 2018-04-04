@@ -7,8 +7,16 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class UserServiceImpl implements UserService {
-    @Autowired
     private UserDAO userDAO;
+
+    public UserServiceImpl() {
+        // Need a non-parametric construction method.
+    }
+
+    @Autowired
+    public UserServiceImpl(UserDAO userDAO) {
+        this.userDAO = userDAO;
+    }
 
     @Override
     public UserPO getUser(final String userId) {
