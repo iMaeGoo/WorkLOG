@@ -4,7 +4,7 @@
 
 <hibernate-mapping>
 
-    <class name="com.maemn.worklog.model.RolePO" table="role">
+    <class name="com.maemn.worklog.entity.RolePO" table="role">
 
         <id name="id" type="java.lang.String">
             <column name="ID" />

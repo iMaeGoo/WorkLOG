@@ -1,4 +1,4 @@
-package com.maemn.worklog.model;
+package com.maemn.worklog.entity;
 
 import java.util.Date;
 

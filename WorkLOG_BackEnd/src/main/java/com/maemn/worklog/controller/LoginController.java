@@ -1,6 +1,6 @@
 package com.maemn.worklog.controller;
 
-import com.maemn.worklog.model.UserPO;
+import com.maemn.worklog.entity.UserPO;
 import com.maemn.worklog.service.UserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

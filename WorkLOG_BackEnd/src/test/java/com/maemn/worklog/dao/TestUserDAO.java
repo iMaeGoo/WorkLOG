@@ -1,6 +1,6 @@
 package com.maemn.worklog.dao;
 
-import com.maemn.worklog.model.UserPO;
+import com.maemn.worklog.entity.UserPO;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 

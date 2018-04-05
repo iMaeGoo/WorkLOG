@@ -1,6 +1,6 @@
 package com.maemn.worklog.dao;
 
-import com.maemn.worklog.model.UserPO;
+import com.maemn.worklog.entity.UserPO;
 import org.hibernate.HibernateException;
 import org.hibernate.Query;
 import org.hibernate.Session;

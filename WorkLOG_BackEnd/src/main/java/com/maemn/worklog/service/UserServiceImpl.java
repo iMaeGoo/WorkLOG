@@ -1,7 +1,7 @@
 package com.maemn.worklog.service;
 
 import com.maemn.worklog.dao.UserDAO;
-import com.maemn.worklog.model.UserPO;
+import com.maemn.worklog.entity.UserPO;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
