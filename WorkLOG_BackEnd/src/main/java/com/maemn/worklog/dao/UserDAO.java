@@ -16,7 +16,6 @@ public class UserDAO extends BaseDAO {
     public UserPO getUser(final String userId) {
         logger.info("getUser");
         return getHibernateTemplate().execute(new HibernateCallback<UserPO>() {
-            @Override
             public UserPO doInHibernate(Session session) throws HibernateException {
                 String hql = "from UserPO where id = ?";
                 Query query = session.createQuery(hql);
