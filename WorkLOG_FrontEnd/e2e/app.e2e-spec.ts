@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-describe('newton-work-log App', () => {
+describe('ng-alain App', () => {
   let page: AppPage;
 
   beforeEach(() => {
